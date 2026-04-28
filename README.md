@@ -19,7 +19,7 @@
 | Satyam Kachhi | EN22CS301884 |
 | Asif Mansoori | EN23CS3L1005 |
 
-**Guide:** Mr. Ankit Yadav
+**Guide:** Mr. Ankit Gupta
 **University:** Medicaps University, Indore
 **Department:** Computer Science & Engineering
 
