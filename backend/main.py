@@ -7,9 +7,12 @@ import re
 import os
 from datetime import datetime
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
+api_key = os.getenv("GROQ_API_KEY")
+
+if not api_key:
+    raise ValueError("❌ GROQ_API_KEY not found in .env file!")
 
 api_key = os.getenv("GROQ_API_KEY")
 
@@ -23,7 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ✅ PASTE YOUR GROQ API KEY HERE
+# ✅ API key loaded from .env file
 
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
